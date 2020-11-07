@@ -1,0 +1,20 @@
+.NavItems {
+  margin-top: 25px;
+  margin-left: 15px;
+  padding: 8px;
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  align-items: left;
+  height: 14%;
+}
+
+@media (min-width: 500px) {
+  .NavItems {
+    margin: 0;
+    padding: 0;
+    flex-flow: row;
+    align-items: center;
+    height: 100%;
+  }
+}

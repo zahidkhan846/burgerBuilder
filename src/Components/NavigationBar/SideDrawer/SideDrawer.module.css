@@ -1,0 +1,47 @@
+.SideDrawer {
+  position: fixed;
+  width: 280px;
+  max-width: 70%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 200;
+  background-color: #a5dbe9;
+  padding: 32px, 16px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease-out;
+}
+
+@media (min-width: 500px) {
+  .SideDrawer {
+    display: none;
+  }
+}
+
+.Open {
+  transform: traNslateX(0);
+}
+
+.Close {
+  transform: translateX(-100%);
+}
+.Logo {
+  height: 6%;
+  margin-left: 110px;
+  margin-top: 35px;
+}
+
+.Container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.Bar1,
+.Bar2,
+.Bar3 {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  border-radius: 3px;
+}

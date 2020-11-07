@@ -1,0 +1,16 @@
+.ContactInfo {
+  color: #1059ad;
+  margin: 20px auto;
+  width: 80%;
+  text-align: center;
+  box-shadow: 0 2px 3px #528cce;
+  border: 1px solid #1059ad;
+  box-sizing: border-box;
+  background-color: #ebda8f;
+}
+
+@media (min-width: 600px) {
+  .ContactInfo {
+    width: 500px;
+  }
+}

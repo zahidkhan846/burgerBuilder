@@ -1,0 +1,60 @@
+.BulidControls {
+  width: 100%;
+  background-color: #043c61;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  box-shadow: 0 2px 1px #317fb3;
+  margin: auto;
+  padding: 30px 0;
+  color: #dbdaa1;
+}
+
+.OrderButton {
+  background-color: #e5e90e;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #000000;
+  color: #0d579c;
+  font-family: inherit;
+  font-size: 1.2em;
+  padding: 5px 110px;
+  border-radius: 4px;
+  box-shadow: 2px 2px darkgrey;
+}
+
+.OrderButton:hover,
+.OrderButton:active {
+  background-color: #f10b99;
+  border: 1px solid #0fe49d;
+  color: white;
+}
+
+.OrderButton:disabled {
+  background-color: #4382bd;
+  cursor: not-allowed;
+  border: 1px solid #bde40f;
+  color: black;
+}
+
+.OrderButton:hover:disabled {
+  background-color: #043c61;
+  color: black;
+  cursor: not-allowed;
+}
+
+.OrderButton:not(:disabled) {
+  animation: enable 0.3s linear;
+}
+
+@keyframes enable {
+  0% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

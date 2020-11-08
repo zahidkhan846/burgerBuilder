@@ -11,7 +11,7 @@ import burgerBuilderReducer from "./Store/Reducers/burgerBuilder";
 import orderReducer from "./Store/Reducers/order";
 import authReducer from "./Store/Reducers/auth";
 import "./index.css";
-import { watchAuth, watchBurger, watchOrder } from "./saga/sagaIndex";
+import { watchAuth, watchBurger, watchOrder } from "./Saga/sagaIndex";
 
 const rootReducer = combineReducers({
   burgerBuilder: burgerBuilderReducer,
